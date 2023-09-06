@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="android-chrome-512x512.png" type="image/x-icon">
+     
+</head>
+<body>
+    
+<div class="outerbox">
+    <div class="innerbox">
+        <header class="login-header">
+            <h1>Login</h1>
+           
+        </header>
+        <hr>
+        <br>
+        <main>
+            <div class="login-body">
+                <form action="">
+                    <div class="inputs">
+                        <label for="email">Email ID</label>
+                        <input type="email" name="" id="email" placeholder="Enter Your Email Id" required/>
+                    </div>
+
+                    <div class="inputs">
+                        <label for="password">Password</label>
+                        <input type="password" name="" id="password" placeholder="Password (3-8 characters)" title="Use AlphaNumerical Password Only With 3-8 Character Long"  pattern="[A-Za-z0-9]{3,8}" required/>
+                   </div>
+
+                   <div class="checkbox">
+                      <input type="checkbox" id="togglePassword" onclick="toggle()">&nbsp;<strong>Show Password</strong>
+                   </div>
+
+                    <div class="inputs submitButton">
+                        <input type="submit" id="submit" value="Create Account" onclick="login_alert()" />
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="login-footer">
+                <div>
+                    <p>Not Registered? <a href="signup.html">Sign Up</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+    <div class="circle c3"></div>   
+</div>
+
+ 
+<script src="index.js"></script>
+</body>
+</html>

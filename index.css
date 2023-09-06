@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Bricolage+Grotesque:opsz,wght@10..48,600&family=Lato&family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Alumni Sans Inline One', cursive; */
+    /* font-family: 'Bricolage Grotesque', sans-serif; */
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Pacifico', cursive; */
+}
+
+/* style the all inputs tags  */
+.inputs{
+    margin-bottom: 10px;
+}
+
+/* Styling around the form box  */
+.outerbox{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+  text-align: left;
+}
+
+/* from here, styling the form box  */
+.innerbox{
+    width:300px;
+    position: relative;
+    margin:0 auto;
+    top:20%;
+    padding:20px 40px;
+      /* in background color,last "52" is alpha value which tells us the lightness of color  */
+     background-color: #ffffff32;
+      /* Backdrop filter are used to make inner box blurry.  */
+    backdrop-filter:blur(5px);
+    border-radius:10px;
+     box-shadow:4px 4px 16px rgb(82, 94, 93);
+    z-index:2;
+}
+
+h1{
+    font-size:2.5rem;
+    color:#212121;
+}
+.login-header p{
+ font-size:0.8rem;
+ color:rgb(82, 76, 69)
+}
+
+
+.login-body div label{
+   display:block;
+   font-weight:bold;
+}
+.login-body div input:not(#togglePassword){
+    width:100%;
+    padding: 5px 5px;
+    border:1px solid rgb(199, 185, 185);
+    font-size:1rem;
+    margin-top:4px;
+}
+.login-body div #submit{
+    width:100%;
+    padding: 5px 0;
+    border:1px solid rgb(199, 185, 185);
+    font-size:1rem;
+    margin-top:4px;
+    background-color: rgba(14, 114, 114, 0.8);
+    color:white;
+    margin-top:20px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.login-body #submit:hover{
+    width:50%;
+    margin-left:25%;
+    background-color: rgba(14, 114, 114);
+    border-radius:5px;
+    
+}
+.login-footer div{
+   text-align:center;
+   margin-top:30px;
+}
+
+
+/* Styling the Outer Circles  */
+.circle{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    background:linear-gradient(to top right, #ffffffaa,rgba(179, 153, 177, 0.651));
+    position:absolute;
+}
+.c1{
+   top:10px;
+   left:10px;
+}
+.c2{
+    bottom:10px;
+    right:10px;
+ }
+ .c3{
+    top:10%;
+    left:60%;
+ }
+
+/* password visibiity css */
+.checkbox{
+    margin:0 0 20px 0;
+    opacity: 0.8;
+    font-size:13px;
+}
+
